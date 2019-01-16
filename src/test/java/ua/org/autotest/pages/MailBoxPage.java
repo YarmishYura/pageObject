@@ -17,10 +17,10 @@ public class MailBoxPage {
         this.wait = new WebDriverWait(driver,10);
     }
 
-    @FindBy(xpath = "//*[@id=\"gb\"]/div[2]/div[6]/div[1]/div/div[2]")
+    @FindBy(xpath = "//div[contains(@aria-label,'Информация об аккаунте')]/div[1]/div[1]/div[2]")
     private WebElement userProfile;
 
-    @FindBy(xpath = "//*[@id=\"gb\"]/div[2]/div[3]/div/div[2]/div/a/span")
+    @FindBy(xpath = "//a[contains(@aria-label,'yarmish.yura12345@gmail.com')]/span")
     private WebElement userMenu;
 
     @FindBy(id = "gb_71")

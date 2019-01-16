@@ -16,7 +16,7 @@ public class SetUpTest{
 
     @BeforeClass
     public static void setUp(){
-        System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         driver = new ChromeDriver();
         loginPage = new LoginPage(driver);
         mailBoxPage = new MailBoxPage(driver);

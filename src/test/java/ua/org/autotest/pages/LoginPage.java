@@ -38,6 +38,4 @@ public class LoginPage {
         wait.until(ExpectedConditions.elementToBeClickable(loginButton));
         loginButton.click();
     }
-
-
 }
